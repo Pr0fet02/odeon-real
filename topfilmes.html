@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Top Filmes - Odeon Real</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+/* ===== FUNDO GERAL ===== */
+body {
+    background-color: #f8f5ef !important; /* marfim elegante */
+    color: #1a1a1a !important;
+}
+
+/* ===== INTRO / HEADER ===== */
+#intro {
+    background: linear-gradient(rgba(15,15,15,0.85), rgba(15,15,15,0.85)),
+                url("images/logoprincipal.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #c5a047 !important;
+}
+
+/* ===== LOGO ===== */
+header#header a.logo {
+    background-color: #0f0f0f !important;
+    color: #c5a047 !important;
+    border: 2px solid #c5a047 !important;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* ===== NAV ===== */
+nav#nav {
+    background-color: #0f0f0f !important;
+    border-bottom: 3px solid #c5a047 !important;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+nav#nav ul.links li a {
+    color: #c5a047 !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+nav#nav ul.links li a:hover {
+    color: #ffffff !important;
+}
+
+nav#nav ul.links li.active a {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    border: 1px solid #c5a047 !important;
+}
+
+nav#nav ul.icons li a {
+    color: #c5a047 !important;
+}
+
+/* ===== TITULO DA PAGINA ===== */
+.page-title {
+    text-align: center;
+    color: #0f0f0f !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem 0;
+    border-bottom: 2px solid #c5a047;
+    display: block;
+    padding-bottom: 10px;
+}
+
+/* ===== GRID DE FILMES (CARDS) ===== */
+.film-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.film-card {
+    background-color: #ffffff !important;
+    border: 1px solid #e0d6c3;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.film-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+}
+
+.film-card img {
+    width: 100%;
+    height: auto;
+}
+
+.film-card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.film-card-content h3 {
+    color: #0f0f0f !important;
+    margin-bottom: 15px;
+}
+
+/* ===== BOTÕES ===== */
+.button {
+    background-color: #0f0f0f !important;
+    color: #c5a047 !important;
+    border: 1px solid #c5a047 !important;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c5a047 !important;
+    color: #0f0f0f !important;
+}
+
+/* ===== FOOTER ===== */
+#footer {
+    background-color: #0f0f0f !important;
+    color: #c5a047 !important;
+}
+
+#footer h3 {
+    color: #ffffff !important;
+}
+
+#footer a {
+    color: #c5a047 !important;
+}
+
+#footer a:hover {
+    color: #ffffff !important;
+}
+
+#copyright {
+    background-color: #0a0a0a !important;
+    color: #c5a047 !important;
+}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper" class="fade-in">
+
+				<header id="header">
+						<a href="index.html" class="logo">Odeon Real</a>
+					</header>
+
+				<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Trailers</a></li>
+							<li><a href="proximasestreias.html">Próximas Estreias</a></li>
+							<li class="active"><a href="topfilmes.html">Top Filmes</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="paginatwitter.html" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="paginaface.html" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="paginainsta.html" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<div id="main">
+
+						<h2 class="page-title">Top Filmes em Cartaz</h2>
+
+						<div class="film-grid">
+							<div class="film-card">
+								<img src="imagestopfilmes/epicelvispresleyinconcert.jfif" alt="Epic: Elvis Presley in Concert">
+								<div class="film-card-content">
+									<h3>Epic: Elvis Presley in Concert</h3>
+									<p>Documentário / Música / Biografia. Uma celebração ao legado de Elvis Presley através de concertos e histórias da sua carreira.</p>
+									<a href="https://www.youtube.com/watch?v=uNatR2h-0_c" target="_blank" class="button">Ver Trailer</a>
+								</div>
+							</div>
+
+							<div class="film-card">
+								<img src="imagestopfilmes/acriada.jfif" alt="A Criada">
+								<div class="film-card-content">
+									<h3>A Criada</h3>
+									<p>Thriller / Mistério / Drama. Uma empregada descobre segredos perigosos na luxuosa casa onde trabalha.</p>
+									<a href="https://www.youtube.com/watch?v=mjuQslcbNps" target="_blank" class="button">Ver Trailer</a>
+								</div>
+							</div>
+
+							<div class="film-card">
+								<img src="imagestopfilmes/goatomaiordetodos.jfif" alt="GOAT: O Maior de Todos">
+								<div class="film-card-content">
+									<h3>GOAT: O Maior de Todos</h3>
+									<p>Drama / Biografia / Desporto. A jornada inspiradora de um atleta lendário em busca do seu melhor.</p>
+									<a href="https://www.youtube.com/watch?v=WzSsj2ULbbE" target="_blank" class="button">Ver Trailer</a>
+								</div>
+							</div>
+
+							<div class="film-card">
+								<img src="imagestopfilmes/crime101.jfif" alt="Crime 101">
+								<div class="film-card-content">
+									<h3>Crime 101</h3>
+									<p>Crime / Suspense / Thriller. Um investigador enfrenta um caso complexo cheio de reviravoltas e enigmas.</p>
+									<a href="https://www.youtube.com/watch?v=KeEHsuZ4Ja4" target="_blank" class="button">Ver Trailer</a>
+								</div>
+							</div>
+
+							<div class="film-card">
+								<img src="imagestopfilmes/toystory5.jfif" alt="Toy Story 5">
+								<div class="film-card-content">
+									<h3>Toy Story 5</h3>
+									<p>Animação / Família / Aventura. Woody e a equipa embarcam numa nova aventura cheia de humor e coração.</p>
+									<a href="https://www.youtube.com/watch?v=GGBgf8dcgyY" target="_blank" class="button">Ver Trailer</a>
+								</div>
+							</div>
+
+							<div class="film-card">
+								<img src="imagestopfilmes/starwarsthemandalorianegrogu.jfif" alt="Star Wars: The Mandalorian & Grogu">
+								<div class="film-card-content">
+									<h3>Star Wars: The Mandalorian & Grogu</h3>
+									<p>Ficção Científica / Ação / Aventura. O Mandaloriano protege Grogu enquanto enfrentam perigos pela galáxia.</p>
+									<a href="https://www.youtube.com/watch?v=_pa1KLXuW0Y" target="_blank" class="button">Ver Trailer</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				<footer id="footer">
+						<section>
+							<h3>Contacte-nos</h3>
+							<p>Email: <a href="mailto:OdeonReal@gmail.com">OdeonReal@gmail.com</a><br />
+							Tel: (+351) 915-377-044</p>
+						</section>
+						<section class="split contact">
+							<section>
+								<h3>Redes Sociais</h3>
+								<ul class="icons alt">
+									<li><a href="paginatwitter.html" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="paginaface.html" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="paginainsta.html" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<div id="copyright">
+						<ul><li>&copy; Odeon Real</li><li>Design: @profet</li></ul>
+					</div>
+
+			</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
