@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Login VIP - Odeon Real</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* ===== FUNDO GERAL ===== */
+			body {
+				background-color: #f8f5ef !important;
+				color: #1a1a1a !important;
+			}
+
+			#intro {
+				background: linear-gradient(rgba(15,15,15,0.85), rgba(15,15,15,0.85)), url("images/logoprincipal.jpeg");
+				background-size: cover;
+				background-position: center;
+				color: #c5a047 !important;
+			}
+
+			header#header a.logo {
+				background-color: #0f0f0f !important;
+				color: #c5a047 !important;
+				border: 2px solid #c5a047 !important;
+			}
+
+			/* ===== NAV COM LOGIN À DIREITA ===== */
+			nav#nav {
+				background-color: #0f0f0f !important;
+				border-bottom: 3px solid #c5a047 !important;
+			}
+
+			nav#nav ul.links {
+				display: flex;
+				justify-content: flex-start; /* Alinha o conteúdo base à esquerda */
+				width: 100%;
+			}
+
+			/* Estilo para afastar o Login para a Direita */
+			.login-tab {
+				margin-left: auto !important; /* Empurra o botão para o fim da linha (direita) */
+			}
+
+			.login-tab a {
+				background-color: #c5a047 !important;
+				color: #0f0f0f !important;
+				font-weight: 800 !important;
+				border-radius: 0 0 4px 4px;
+				padding: 0 25px !important;
+				box-shadow: 0 4px 15px rgba(197, 160, 71, 0.3);
+			}
+
+			.login-tab a:hover {
+				background-color: #ffffff !important;
+				color: #0f0f0f !important;
+			}
+
+			/* ===== ÁREA DE LOGIN (MAIS BONITA E SEPARADA) ===== */
+			#main {
+				background-color: transparent !important; /* Remove o fundo cinza padrão */
+				border: none !important;
+				padding: 80px 0 !important;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 70vh;
+			}
+
+			.login-box-vip {
+				max-width: 450px;
+				width: 90%;
+				padding: 50px;
+				background: #ffffff; /* Caixa branca limpa */
+				border-radius: 12px;
+				border-top: 6px solid #c5a047;
+				box-shadow: 0 30px 60px rgba(0,0,0,0.12); /* Sombra suave para flutuar */
+				text-align: center;
+			}
+
+			.login-box-vip h2 { 
+				color: #0f0f0f !important; 
+				letter-spacing: 3px; 
+				font-weight: 900;
+				margin-bottom: 10px;
+			}
+
+			.field-custom { margin-bottom: 25px; text-align: left; }
+			.field-custom label { 
+				color: #0f0f0f !important; 
+				font-weight: 700; 
+				font-size: 0.75rem; 
+				text-transform: uppercase;
+				margin-bottom: 8px; 
+				display: block; 
+			}
+
+			.field-custom input { 
+				border: 1px solid #ddd !important; 
+				background: #fff !important; 
+				height: 3.5rem !important;
+			}
+
+			.btn-entrar {
+				width: 100%;
+				background-color: #0f0f0f !important;
+				color: #c5a047 !important;
+				border: 1px solid #c5a047 !important;
+				font-weight: bold;
+				height: 3.5rem;
+				letter-spacing: 2px;
+				transition: 0.3s ease;
+			}
+
+			.btn-entrar:hover { 
+				background-color: #c5a047 !important; 
+				color: #0f0f0f !important; 
+				transform: translateY(-3px);
+			}
+
+			.extra-links { 
+				margin-top: 25px; 
+				font-size: 0.8rem; 
+				border-top: 1px solid #f0f0f0; 
+				padding-top: 20px; 
+			}
+			.extra-links a { color: #c5a047; text-decoration: none; font-weight: bold; }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper" class="fade-in">
+
+			<div id="intro">
+				<h1>Acesso VIP</h1>
+				<p>A exclusividade do cinema Odeon Real à distância de um clique.</p>
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				</ul>
+			</div>
+
+			<header id="header">
+				<a href="index.html" class="logo">Odeon Real</a>
+			</header>
+
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Trailers</a></li>
+					<li><a href="proximasestreias.html">Próximas Estreias</a></li>
+					<li><a href="topfilmes.html">Top Filmes</a></li>
+					<li><a href="bilheteira.html">Bilheteira Antecipada</a></li>
+					
+					<li class="login-tab active"><a href="login.html">LOGIN VIP</a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<div class="login-box-vip">
+					<header class="major">
+						<h2>MEMBRO VIP</h2>
+						<p style="color: #888; font-size: 0.9rem;">Introduza as suas credenciais para continuar</p>
+					</header>
+					
+					<form method="post" action="index.html">
+						<div class="field-custom">
+							<label>Email</label>
+							<input type="email" name="email" placeholder="seu@email.com" required />
+						</div>
+						<div class="field-custom">
+							<label>Palavra-passe</label>
+							<input type="password" name="password" placeholder="••••••••" required />
+						</div>
+						<ul class="actions special">
+							<li><input type="submit" value="ENTRAR NA SALA" class="button btn-entrar" /></li>
+						</ul>
+					</form>
+
+					<div class="extra-links">
+						<p>Ainda não tem conta? <a href="#">PEDIR CONVITE</a></p>
+					</div>
+				</div>
+			</div>
+
+			<footer id="footer">
+				<section class="split contact" style="width: 100%; text-align: center;">
+					<section>
+						<h3>Email</h3>
+						<p><a href="#">OdeonReal@gmail.com</a></p>
+					</section>
+				</section>
+			</footer>
+
+			<div id="copyright">
+				<ul><li>&copy; Odeon Real</li><li>Design: @profet</li></ul>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

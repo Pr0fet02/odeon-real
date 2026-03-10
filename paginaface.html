@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Odeon Real - Página Oficial</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* ===== TEMA BASE FACEBOOK CINEMATOGRÁFICO ===== */
+        body { background-color: #f0f2f5 !important; }
+
+        /* Cabeçalho Premium */
+        #header-cinema {
+            width: 100%;
+            height: 380px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo-container {
+            background: rgba(15, 15, 15, 0.85);
+            backdrop-filter: blur(8px);
+            padding: 20px 50px;
+            border: 2px solid #c5a047;
+            text-align: center;
+        }
+
+        .logo-text {
+            font-weight: 900;
+            font-size: 3rem;
+            letter-spacing: 6px;
+            color: #c5a047;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        /* Barra Branca de Info e Navegação */
+        .fb-white-bar {
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .fb-container-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        /* PERFIL AJUSTADO PARA DESCER O TEXTO */
+        .profile-overlay {
+            display: flex;
+            align-items: flex-end;
+            margin-top: -100px; 
+            padding-bottom: 15px; /* Espaço inferior da barra branca */
+            border-bottom: 1px solid #ddd;
+        }
+
+        .profile-pic {
+            width: 170px;
+            height: 170px;
+            background: #0f0f0f;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: #c5a047;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: -10px; /* Ajuda a baixar o ponto de referência do texto */
+        }
+
+        .profile-info {
+            margin-left: 20px;
+            /* Aumentamos o padding-bottom para o texto não subir */
+            padding-bottom: 25px; 
+            flex-grow: 1;
+        }
+
+        .profile-info h1 { 
+            font-size: 2.2rem; 
+            margin: 0; 
+            color: #050505; 
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .profile-info p { 
+            color: #65676b; 
+            font-weight: 600; 
+            margin: 8px 0 0 0; 
+        }
+
+        /* Botões de Ação alinhados com o texto baixo */
+        .fb-action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px; /* Alinhado com o padding do profile-info */
+        }
+
+        .btn-fb {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-blue { background: #1877f2; color: #fff !important; border: none; }
+        .btn-gray { background: #e4e6eb; color: #050505 !important; border: none; }
+
+        /* Tabs (Menu) */
+        .fb-tabs {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .fb-tabs li {
+            padding: 15px 20px;
+            color: #65676b;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+        }
+
+        .fb-tabs li.active {
+            color: #1877f2;
+            border-bottom-color: #1877f2;
+        }
+
+        /* Layout de Colunas */
+        .fb-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 16px;
+            padding: 0 20px;
+        }
+
+        .fb-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+        }
+
+        .post-header { display: flex; align-items: center; margin-bottom: 12px; }
+        .post-avatar { width: 40px; height: 40px; background: #0f0f0f; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #c5a047; margin-right: 10px; font-weight: bold; font-size: 0.8rem;}
+        
+        .video-box {
+            width: 100%;
+            background: #000;
+            margin: 10px 0;
+            aspect-ratio: 16/9;
+        }
+
+        @media screen and (max-width: 840px) {
+            .fb-grid { grid-template-columns: 1fr; }
+            .profile-overlay { flex-direction: column; align-items: center; text-align: center; margin-top: -85px; }
+            .profile-info { margin-left: 0; padding-bottom: 10px; }
+            .fb-action-buttons { margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <div id="header-cinema">
+        <div class="logo-container">
+            <h1 class="logo-text">Odeon Real</h1>
+            <div style="color: #fff; letter-spacing: 3px; font-size: 0.8rem;">ESTREIAS DE CINEMA</div>
+        </div>
+    </div>
+
+    <div class="fb-white-bar">
+        <div class="fb-container-inner">
+            <div class="profile-overlay">
+                <div class="profile-pic">OR</div>
+                <div class="profile-info">
+                    <h1>Odeon Real</h1>
+                    <p>12,432 pessoas seguem isto</p>
+                </div>
+                <div class="fb-action-buttons">
+                    <a href="#" class="btn-fb btn-blue">✓ Seguir</a>
+                    <a href="#" class="btn-fb btn-gray">✉ Mensagem</a>
+                </div>
+            </div>
+            <ul class="fb-tabs">
+                <li class="active">Publicações</li>
+                <li>Sobre</li>
+                <li>Vídeos</li>
+                <li>Fotos</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fb-grid">
+        <aside>
+            <div class="fb-card">
+                <h3>Apresentação</h3>
+                <p style="text-align: center;">🎬 Trailers oficiais e as maiores estreias de Hollywood em primeira mão.</p>
+                <div style="font-size: 0.9rem; color: #65676b; line-height: 2;">
+                    <div>📍 Lisboa, Portugal</div>
+                    <div>🌐 www.odeonreal.pt</div>
+                    <div>📧 contacto@odeonreal.pt</div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="fb-card">
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <div class="post-avatar">OR</div>
+                    <div style="background: #f0f2f5; padding: 10px; border-radius: 20px; flex-grow: 1; color: #65676b;">No que estás a pensar?</div>
+                </div>
+            </div>
+
+            <div class="fb-card">
+                <div class="post-header">
+                    <div class="post-avatar">OR</div>
+                    <div>
+                        <div style="font-weight: bold;">Odeon Real</div>
+                        <div style="font-size: 0.75rem; color: #65676b;">Publicado por Odeon Bot · 2 h · 🌍</div>
+                    </div>
+                </div>
+                <p>O trailer que todos esperavam chegou. 🐉 <strong>Avatar: Fogo e Cinzas</strong> promete mudar tudo em 2025!</p>
+                <div class="video-box">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <hr style="margin: 10px 0;">
+                <div style="display: flex; justify-content: space-around; font-weight: 600; color: #65676b;">
+                    <span>👍 Gosto</span>
+                    <span>💬 Comentar</span>
+                    <span>🔗 Partilhar</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
